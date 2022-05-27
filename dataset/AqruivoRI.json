@@ -1,5 +1,5 @@
 {
-	"name": "ArquivoQueryTech",
+	"name": "AqruivoRI",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
@@ -10,15 +10,18 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "arquivo.csv",
-				"folderPath": "resultado",
-				"fileSystem": "query"
+				"fileName": "RI A PARTIR DE 2020.csv",
+				"fileSystem": "teste"
 			},
 			"columnDelimiter": ";",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": []
+		"schema": [
+			{
+				"type": "String"
+			}
+		]
 	}
 }
